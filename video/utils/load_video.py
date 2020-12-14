@@ -16,8 +16,8 @@ def load_video(path: str) -> np.ndarray:
     frame_length = cap_video.get(cv2.CAP_PROP_FRAME_COUNT)
     fps = cap_video.get(cv2.CAP_PROP_FPS)
 
-    print("frame length:", frame_length)
-    print("fps:", fps)
+    print("frame length:", int(frame_length))
+    print("fps:", int(fps))
 
     frames = []
     while cap_video.isOpened():
