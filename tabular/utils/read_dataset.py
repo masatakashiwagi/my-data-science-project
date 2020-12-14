@@ -7,7 +7,7 @@ import math
 
 
 if Path.cwd().name == '':
-	from src.utils.reduce_mem_usage import reduce_mem_usage
+	from tabular.utils.reduce_mem_usage import reduce_mem_usage
 elif Path.cwd().name == 'utils':
 	sys.path.append("../")
 	from utils.reduce_mem_usage import reduce_mem_usage
