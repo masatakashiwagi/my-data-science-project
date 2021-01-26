@@ -14,7 +14,7 @@ def convert_xlsx_to_csv(filename: str, encoding: str = 'Shift_JIS') -> None:
 		output_name = os.path.splitext(path)
 		for key in keys:
 			dframe = df[key]
-			output_file = output_name[0] + '.csv'
+			output_file = output_name[0] + f'_{key}.csv'
 			dframe.to_csv(output_file, encoding=encoding, index=False)
 	else:
 		raise ValueError(f"{path} is not exist.")
