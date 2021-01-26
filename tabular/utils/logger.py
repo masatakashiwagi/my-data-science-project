@@ -1,9 +1,8 @@
-import sys
 import logging
 
 
 def get_logger(out_file=None):
-    """takuoko code"""
+    """takuoko-san code"""
     logger = logging.getLogger()
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
     logger.handlers = []
@@ -21,4 +20,5 @@ def get_logger(out_file=None):
         logger.addHandler(handler)
 
     logger.info("logger set up")
+
     return logger
